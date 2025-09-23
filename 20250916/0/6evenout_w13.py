@@ -8,4 +8,3 @@ while x := int(input()):
         print(x)
 if not fl:
     print("GOOD")
-
