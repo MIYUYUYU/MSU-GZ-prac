@@ -1,0 +1,5 @@
+:pi 3.14159
+pi
+:sum4 a b c d a+b+c+d
+sum4 1 2 3 4
+quit "{}, {}"

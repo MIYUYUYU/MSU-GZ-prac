@@ -1,0 +1,5 @@
+:greet name "Hello, {}!".format(name)
+greet "World"
+:greet name "Hello,{}!".format(name)
+greet "John asd"
+quit "{}, {}"
