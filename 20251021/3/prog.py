@@ -1,0 +1,1 @@
+import itertools; n = int(input()); print(', '.join(sorted(filter(lambda s: s.count('TOR') == 2, map(''.join, itertools.product('TOR', repeat=n))))))
