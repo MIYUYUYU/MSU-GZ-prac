@@ -1,0 +1,10 @@
+A = type('AA',(),{'__a':123})
+B = type('BB',(A,),{'__a':456})
+a = A()
+b = B()
+print(a.__a)
+print(b.__a)
+print(dir(A))
+print(dir(B))
+del a
+print(b.__a)
