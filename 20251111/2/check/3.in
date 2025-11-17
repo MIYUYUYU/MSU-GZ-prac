@@ -1,0 +1,11 @@
+class C:
+  num = Num()
+print(C().num)
+c, d, e = C(), C(), C()
+c.num = d.num = 2
+e.num = 20
+print(c.num+d.num)
+c.num = "qwerdadqwedadqwerqwer"
+print(c.num+d.num)
+d.num = range(10, 50, 7)
+print(c.num+d.num-e.num)
