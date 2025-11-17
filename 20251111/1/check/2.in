@@ -1,0 +1,9 @@
+@objcount
+class D:
+    pass
+c, d, e = D(), D(), D()
+print(D.counter)
+c = 100
+print(D.counter)
+d = 19
+print(D.counter)
