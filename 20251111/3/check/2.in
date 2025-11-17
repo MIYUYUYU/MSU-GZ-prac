@@ -1,0 +1,5 @@
+wo = Vowel(a=1)
+try:
+    print(wo.o)
+except AttributeError as e:
+    print(e)

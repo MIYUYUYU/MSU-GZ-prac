@@ -1,0 +1,6 @@
+wo = Vowel(a=1)
+print(wo.answer)
+try:
+    wo.answer = 100
+except AttributeError as e:
+    print(e)
