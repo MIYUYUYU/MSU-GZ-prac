@@ -1,0 +1,9 @@
+store 10 a
+store 0 b
+div a b result
+out result
+
+store 10 c
+store 2 d
+div c d result2
+out result2

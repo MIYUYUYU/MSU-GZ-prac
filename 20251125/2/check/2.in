@@ -1,0 +1,10 @@
+store 5 x
+store 3 y
+add x y sum
+sub x y diff
+mul x y product
+div x y quotient
+out sum
+out diff
+out product
+out quotient

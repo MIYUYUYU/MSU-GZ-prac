@@ -1,0 +1,11 @@
+__init__: (10,), {}
+multiply: (3,), {}
+30
+greet: ('Alice',), {}
+Hello, Alice!
+greet: ('Bob',), {'greeting': 'Hi'}
+Hi, Bob!
+set_value: (20,), {}
+20
+add: (5,), {}
+45

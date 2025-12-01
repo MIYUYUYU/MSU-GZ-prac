@@ -1,0 +1,27 @@
+class Base(metaclass=dump):
+    def __init__(self, value):
+        self.value = value
+
+    def base_method(self, x):
+        return f"Base: {self.value + x}"
+
+
+class Derived(Base):
+    def __init__(self, value, extra):
+        super().__init__(value)
+        self.extra = extra
+
+    def derived_method(self, y):
+        return f"Derived: {self.value + self.extra + y}"
+
+    def mixed_args(self, a, b, flag=True, multiplier=1):
+        result = (a + b) * multiplier
+        if flag:
+            result += self.value
+        return result
+
+d = Derived(100, 50)  # 输出: __init__: (100, 50), {}
+print(d.base_method(25))  # 输出: base_method: (25,), {}
+print(d.derived_method(25))  # 输出: derived_method: (25,), {}
+print(d.mixed_args(10, 20))  # 输出: mixed_args: (10, 20), {}
+print(d.mixed_args(10, 20, flag=False, multiplier=2))  # 输出: mixed_args: (10, 20), {'flag': False, 'multiplier': 2}

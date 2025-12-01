@@ -1,0 +1,10 @@
+__init__: (100, 50), {}
+__init__: (100,), {}
+base_method: (25,), {}
+Base: 125
+derived_method: (25,), {}
+Derived: 175
+mixed_args: (10, 20), {}
+130
+mixed_args: (10, 20), {'flag': False, 'multiplier': 2}
+60

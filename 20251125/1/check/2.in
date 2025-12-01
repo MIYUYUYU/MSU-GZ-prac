@@ -1,0 +1,28 @@
+class C(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def add(self, other, another=None):
+        return self.val + other + (another or self.val)
+
+    def multiply(self, factor):
+        return self.val * factor
+
+    def greet(self, name, greeting="Hello", loud=False):
+        message = f"{greeting}, {name}!"
+        if loud:
+            message = message.upper()
+        return message
+
+    def set_value(self, new_value):
+        self.val = new_value
+        return self.val
+
+
+# 测试
+c = C(10)  # 输出: __init__: (10,), {}
+print(c.multiply(3))  # 输出: multiply: (3,), {}
+print(c.greet("Alice"))  # 输出: greet: ('Alice',), {}
+print(c.greet("Bob", greeting="Hi"))  # 输出: greet: ('Bob',), {'greeting': 'Hi'}
+print(c.set_value(20))  # 输出: set_value: (20,), {}
+print(c.add(5))  # 输出: add: (5,), {}
